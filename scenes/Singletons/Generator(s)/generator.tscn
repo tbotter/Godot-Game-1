@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://b4s1byc3ac7ya"]
+
+[ext_resource type="Script" uid="uid://dsqn318g8lqx2" path="res://scenes/Singletons/Generator(s)/generator.gd" id="1_vly1t"]
+
+[node name="Generator" type="Node"]
+script = ExtResource("1_vly1t")

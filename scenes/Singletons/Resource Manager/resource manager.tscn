@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://c1exbxqbmx3p8"]
+
+[ext_resource type="Script" uid="uid://cbpfhvif2bect" path="res://scenes/Singletons/Resource Manager/resource manager.gd" id="1_7w6dd"]
+
+[node name="Resource Manager" type="Node"]
+script = ExtResource("1_7w6dd")

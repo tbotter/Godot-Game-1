@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="Item" load_steps=2 format=3 uid="uid://tkravgesypvg"]
+
+[ext_resource type="Script" uid="uid://dxhec3op7c85c" path="res://data_structures/data/New_Item.gd" id="1_jr1fx"]
+
+[resource]
+script = ExtResource("1_jr1fx")
+Name = "Cobblestone"
+Type = "Block"
+Obtain = "Mining"
+BaseDrop = 1
+BaseXP = 0.5
+metadata/_custom_type_script = "uid://dxhec3op7c85c"

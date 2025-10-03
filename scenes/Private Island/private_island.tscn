@@ -1,0 +1,142 @@
+[gd_scene load_steps=3 format=3 uid="uid://bniw04x68lpgn"]
+
+[ext_resource type="Script" uid="uid://d1ji5bux6eyg1" path="res://scenes/Private Island/private_island.gd" id="1_n6bvv"]
+[ext_resource type="PackedScene" uid="uid://dp7pbia7iax10" path="res://scenes/Private Island/minion_area.tscn" id="2_16044"]
+
+[node name="Private Island" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("1_n6bvv")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0.3953299, 0.67881906, 1)
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+theme_override_constants/margin_left = 8
+theme_override_constants/margin_top = 8
+theme_override_constants/margin_right = 8
+theme_override_constants/margin_bottom = 8
+
+[node name="Island" type="Control" parent="MarginContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="IslandNameLabel" type="Label" parent="MarginContainer/Island"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -92.5
+offset_right = 92.5
+offset_bottom = 39.0
+grow_horizontal = 2
+theme_type_variation = &"HeaderLarge"
+text = "Private Island"
+horizontal_alignment = 1
+
+[node name="PIOakButton" type="Button" parent="MarginContainer/Island"]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -128.0
+offset_top = -199.0
+offset_right = 128.0
+offset_bottom = -135.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Forage for Oak Logs"
+
+[node name="LockedCobblestoneButton" type="Button" parent="MarginContainer/Island"]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -128.0
+offset_top = -109.0
+offset_right = 128.0
+offset_bottom = -45.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Unlock Cobblestone:
+32 Oak Logs"
+
+[node name="PICobblestoneButton" type="Button" parent="MarginContainer/Island"]
+unique_name_in_owner = true
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -128.0
+offset_top = -109.0
+offset_right = 128.0
+offset_bottom = -45.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Mine Cobblestone"
+
+[node name="ShowMinionArea" type="Button" parent="MarginContainer/Island"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -8.0
+offset_top = -8.0
+grow_horizontal = 0
+grow_vertical = 0
+text = "Show Minion Area"
+
+[node name="MinionAreaContainer" type="VBoxContainer" parent="MarginContainer/Island"]
+unique_name_in_owner = true
+visible = false
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -914.0
+offset_top = -498.0
+grow_horizontal = 0
+grow_vertical = 0
+
+[node name="HideMinionArea" type="Button" parent="MarginContainer/Island/MinionAreaContainer"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+size_flags_horizontal = 8
+size_flags_vertical = 4
+text = "Hide Minion Area"
+
+[node name="Minion Area" parent="MarginContainer/Island/MinionAreaContainer" instance=ExtResource("2_16044")]
+custom_minimum_size = Vector2(914, 430)
+layout_mode = 2

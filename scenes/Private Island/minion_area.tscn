@@ -1,0 +1,596 @@
+[gd_scene load_steps=3 format=3 uid="uid://dp7pbia7iax10"]
+
+[ext_resource type="Script" uid="uid://4r08b5nogqw1" path="res://scenes/Private Island/minion_area.gd" id="1_nsp0h"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_nsp0h"]
+font_size = 24
+outline_size = 5
+outline_color = Color(0, 0, 0, 1)
+
+[node name="Minion Area" type="Control"]
+layout_mode = 3
+anchor_right = 0.71300006
+anchor_bottom = 0.597
+offset_right = 1.3599243
+offset_bottom = 0.16000366
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_nsp0h")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.99100006
+anchor_bottom = 0.98100007
+offset_right = 8.225952
+offset_bottom = 8.169983
+color = Color(0.04087589, 0.3544176, 0.24206239, 1)
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 8
+theme_override_constants/margin_top = 8
+theme_override_constants/margin_right = 8
+theme_override_constants/margin_bottom = 8
+
+[node name="MainMinionContainer" type="GridContainer" parent="MarginContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_constants/h_separation = 6
+theme_override_constants/v_separation = 6
+columns = 8
+
+[node name="ID0" type="Button" parent="MarginContainer/MainMinionContainer"]
+custom_minimum_size = Vector2(107, 64)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+focus_mode = 0
+text = "Place Minion"
+
+[node name="ID1" type="Button" parent="MarginContainer/MainMinionContainer"]
+custom_minimum_size = Vector2(107, 64)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+focus_mode = 0
+text = "Place Minion"
+
+[node name="ID2" type="Button" parent="MarginContainer/MainMinionContainer"]
+custom_minimum_size = Vector2(107, 64)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+focus_mode = 0
+text = "Place Minion"
+
+[node name="ID3" type="Button" parent="MarginContainer/MainMinionContainer"]
+custom_minimum_size = Vector2(107, 64)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+focus_mode = 0
+text = "Place Minion"
+
+[node name="ID4" type="Button" parent="MarginContainer/MainMinionContainer"]
+custom_minimum_size = Vector2(107, 64)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+focus_mode = 0
+text = "Place Minion"
+
+[node name="ID5" type="Button" parent="MarginContainer/MainMinionContainer"]
+custom_minimum_size = Vector2(107, 64)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+focus_mode = 0
+text = "Place Minion"
+
+[node name="ID6" type="Button" parent="MarginContainer/MainMinionContainer"]
+custom_minimum_size = Vector2(107, 64)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+focus_mode = 0
+text = "Place Minion"
+
+[node name="ID7" type="Button" parent="MarginContainer/MainMinionContainer"]
+custom_minimum_size = Vector2(107, 64)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+focus_mode = 0
+text = "Place Minion"
+
+[node name="ID8" type="Button" parent="MarginContainer/MainMinionContainer"]
+custom_minimum_size = Vector2(107, 64)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+focus_mode = 0
+text = "Place Minion"
+
+[node name="ID9" type="Button" parent="MarginContainer/MainMinionContainer"]
+custom_minimum_size = Vector2(107, 64)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+focus_mode = 0
+text = "Place Minion"
+
+[node name="ID10" type="Button" parent="MarginContainer/MainMinionContainer"]
+custom_minimum_size = Vector2(107, 64)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+focus_mode = 0
+text = "Place Minion"
+
+[node name="ID11" type="Button" parent="MarginContainer/MainMinionContainer"]
+custom_minimum_size = Vector2(107, 64)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+focus_mode = 0
+text = "Place Minion"
+
+[node name="ID12" type="Button" parent="MarginContainer/MainMinionContainer"]
+custom_minimum_size = Vector2(107, 64)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+focus_mode = 0
+text = "Place Minion"
+
+[node name="ID13" type="Button" parent="MarginContainer/MainMinionContainer"]
+custom_minimum_size = Vector2(107, 64)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+focus_mode = 0
+text = "Place Minion"
+
+[node name="ID14" type="Button" parent="MarginContainer/MainMinionContainer"]
+custom_minimum_size = Vector2(107, 64)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+focus_mode = 0
+text = "Place Minion"
+
+[node name="ID15" type="Button" parent="MarginContainer/MainMinionContainer"]
+custom_minimum_size = Vector2(107, 64)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+focus_mode = 0
+text = "Place Minion"
+
+[node name="ID16" type="Button" parent="MarginContainer/MainMinionContainer"]
+custom_minimum_size = Vector2(107, 64)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+focus_mode = 0
+text = "Place Minion"
+
+[node name="ID17" type="Button" parent="MarginContainer/MainMinionContainer"]
+custom_minimum_size = Vector2(107, 64)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+focus_mode = 0
+text = "Place Minion"
+
+[node name="ID18" type="Button" parent="MarginContainer/MainMinionContainer"]
+custom_minimum_size = Vector2(107, 64)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+focus_mode = 0
+text = "Place Minion"
+
+[node name="ID19" type="Button" parent="MarginContainer/MainMinionContainer"]
+custom_minimum_size = Vector2(107, 64)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+focus_mode = 0
+text = "Place Minion"
+
+[node name="ID20" type="Button" parent="MarginContainer/MainMinionContainer"]
+custom_minimum_size = Vector2(107, 64)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+focus_mode = 0
+text = "Place Minion"
+
+[node name="ID21" type="Button" parent="MarginContainer/MainMinionContainer"]
+custom_minimum_size = Vector2(107, 64)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+focus_mode = 0
+text = "Place Minion"
+
+[node name="ID22" type="Button" parent="MarginContainer/MainMinionContainer"]
+custom_minimum_size = Vector2(107, 64)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+focus_mode = 0
+text = "Place Minion"
+
+[node name="ID23" type="Button" parent="MarginContainer/MainMinionContainer"]
+custom_minimum_size = Vector2(107, 64)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+focus_mode = 0
+text = "Place Minion"
+
+[node name="ID24" type="Button" parent="MarginContainer/MainMinionContainer"]
+custom_minimum_size = Vector2(107, 64)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+focus_mode = 0
+text = "Place Minion"
+
+[node name="ID25" type="Button" parent="MarginContainer/MainMinionContainer"]
+custom_minimum_size = Vector2(107, 64)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+focus_mode = 0
+text = "Place Minion"
+
+[node name="ID26" type="Button" parent="MarginContainer/MainMinionContainer"]
+custom_minimum_size = Vector2(107, 64)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+focus_mode = 0
+text = "Place Minion"
+
+[node name="ID27" type="Button" parent="MarginContainer/MainMinionContainer"]
+custom_minimum_size = Vector2(107, 64)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+focus_mode = 0
+text = "Place Minion"
+
+[node name="ID28" type="Button" parent="MarginContainer/MainMinionContainer"]
+custom_minimum_size = Vector2(107, 64)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+focus_mode = 0
+text = "Place Minion"
+
+[node name="ID29" type="Button" parent="MarginContainer/MainMinionContainer"]
+custom_minimum_size = Vector2(107, 64)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+focus_mode = 0
+text = "Place Minion"
+
+[node name="ID30" type="Button" parent="MarginContainer/MainMinionContainer"]
+custom_minimum_size = Vector2(107, 64)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+focus_mode = 0
+text = "Place Minion"
+
+[node name="ID31" type="Button" parent="MarginContainer/MainMinionContainer"]
+custom_minimum_size = Vector2(107, 64)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+focus_mode = 0
+text = "Place Minion"
+
+[node name="ID32" type="Button" parent="MarginContainer/MainMinionContainer"]
+custom_minimum_size = Vector2(107, 64)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+focus_mode = 0
+text = "Place Minion"
+
+[node name="ID33" type="Button" parent="MarginContainer/MainMinionContainer"]
+custom_minimum_size = Vector2(107, 64)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+focus_mode = 0
+text = "Place Minion"
+
+[node name="ID34" type="Button" parent="MarginContainer/MainMinionContainer"]
+custom_minimum_size = Vector2(107, 64)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+focus_mode = 0
+text = "Place Minion"
+
+[node name="ID35" type="Button" parent="MarginContainer/MainMinionContainer"]
+custom_minimum_size = Vector2(107, 64)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+focus_mode = 0
+text = "Place Minion"
+
+[node name="ID36" type="Button" parent="MarginContainer/MainMinionContainer"]
+custom_minimum_size = Vector2(107, 64)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+focus_mode = 0
+text = "Place Minion"
+
+[node name="ID37" type="Button" parent="MarginContainer/MainMinionContainer"]
+custom_minimum_size = Vector2(107, 64)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+focus_mode = 0
+text = "Place Minion"
+
+[node name="ID38" type="Button" parent="MarginContainer/MainMinionContainer"]
+custom_minimum_size = Vector2(107, 64)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+focus_mode = 0
+text = "Place Minion"
+
+[node name="ID39" type="Button" parent="MarginContainer/MainMinionContainer"]
+custom_minimum_size = Vector2(107, 64)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+focus_mode = 0
+text = "Place Minion"
+
+[node name="ID40" type="Button" parent="MarginContainer/MainMinionContainer"]
+custom_minimum_size = Vector2(107, 64)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+focus_mode = 0
+text = "Place Minion"
+
+[node name="ID41" type="Button" parent="MarginContainer/MainMinionContainer"]
+custom_minimum_size = Vector2(107, 64)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+focus_mode = 0
+text = "Place Minion"
+
+[node name="ID42" type="Button" parent="MarginContainer/MainMinionContainer"]
+custom_minimum_size = Vector2(107, 64)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+focus_mode = 0
+text = "Place Minion"
+
+[node name="ID43" type="Button" parent="MarginContainer/MainMinionContainer"]
+custom_minimum_size = Vector2(107, 64)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+focus_mode = 0
+text = "Place Minion"
+
+[node name="ID44" type="Button" parent="MarginContainer/MainMinionContainer"]
+custom_minimum_size = Vector2(107, 64)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+focus_mode = 0
+text = "Place Minion"
+
+[node name="ID45" type="Button" parent="MarginContainer/MainMinionContainer"]
+custom_minimum_size = Vector2(107, 64)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+focus_mode = 0
+text = "Place Minion"
+
+[node name="ID46" type="Button" parent="MarginContainer/MainMinionContainer"]
+custom_minimum_size = Vector2(107, 64)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+focus_mode = 0
+text = "Place Minion"
+
+[node name="ID47" type="Button" parent="MarginContainer/MainMinionContainer"]
+custom_minimum_size = Vector2(107, 64)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+focus_mode = 0
+text = "Place Minion"
+
+[node name="SelectMinionContainer" type="ScrollContainer" parent="MarginContainer"]
+unique_name_in_owner = true
+visible = false
+custom_minimum_size = Vector2(600, 256)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+horizontal_scroll_mode = 0
+vertical_scroll_mode = 0
+
+[node name="ColorRect" type="ColorRect" parent="MarginContainer/SelectMinionContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+color = Color(0.1535897, 0.22274044, 0.19300735, 1)
+
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer/SelectMinionContainer/ColorRect"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 8
+theme_override_constants/margin_top = 8
+theme_override_constants/margin_right = 8
+theme_override_constants/margin_bottom = 8
+
+[node name="InfoMinionContainer" type="VBoxContainer" parent="MarginContainer/SelectMinionContainer/ColorRect/MarginContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 2
+
+[node name="CobblestoneMinionContainer" type="HBoxContainer" parent="MarginContainer/SelectMinionContainer/ColorRect/MarginContainer/InfoMinionContainer"]
+layout_mode = 2
+
+[node name="MinionName" type="Label" parent="MarginContainer/SelectMinionContainer/ColorRect/MarginContainer/InfoMinionContainer/CobblestoneMinionContainer"]
+layout_mode = 2
+size_flags_horizontal = 2
+text = "Cobblestone Minion"
+
+[node name="PlaceMinion" type="Button" parent="MarginContainer/SelectMinionContainer/ColorRect/MarginContainer/InfoMinionContainer/CobblestoneMinionContainer"]
+custom_minimum_size = Vector2(92, 32)
+layout_mode = 2
+size_flags_horizontal = 8
+size_flags_vertical = 4
+text = "Place"
+
+[node name="InfoMinion" type="Button" parent="MarginContainer/SelectMinionContainer/ColorRect/MarginContainer/InfoMinionContainer/CobblestoneMinionContainer"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(92, 32)
+layout_mode = 2
+size_flags_horizontal = 8
+text = "Stats"
+
+[node name="UpgradeMinion" type="Button" parent="MarginContainer/SelectMinionContainer/ColorRect/MarginContainer/InfoMinionContainer/CobblestoneMinionContainer"]
+custom_minimum_size = Vector2(92, 32)
+layout_mode = 2
+size_flags_horizontal = 8
+tooltip_text = "Cost: 256 Cobblestone"
+text = "Upgrade"
+
+[node name="OakwoodMinionContainer" type="HBoxContainer" parent="MarginContainer/SelectMinionContainer/ColorRect/MarginContainer/InfoMinionContainer"]
+layout_mode = 2
+
+[node name="MinionName" type="Label" parent="MarginContainer/SelectMinionContainer/ColorRect/MarginContainer/InfoMinionContainer/OakwoodMinionContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Oak Wood Minion"
+
+[node name="PlaceMinion" type="Button" parent="MarginContainer/SelectMinionContainer/ColorRect/MarginContainer/InfoMinionContainer/OakwoodMinionContainer"]
+custom_minimum_size = Vector2(92, 32)
+layout_mode = 2
+size_flags_horizontal = 8
+size_flags_vertical = 4
+text = "Place"
+
+[node name="InfoMinion" type="Button" parent="MarginContainer/SelectMinionContainer/ColorRect/MarginContainer/InfoMinionContainer/OakwoodMinionContainer"]
+custom_minimum_size = Vector2(92, 32)
+layout_mode = 2
+size_flags_horizontal = 8
+text = "Stats"
+
+[node name="UpgradeMinion" type="Button" parent="MarginContainer/SelectMinionContainer/ColorRect/MarginContainer/InfoMinionContainer/OakwoodMinionContainer"]
+custom_minimum_size = Vector2(92, 32)
+layout_mode = 2
+size_flags_horizontal = 8
+text = "Upgrade"
+
+[node name="CloseInfoContainer" type="Button" parent="MarginContainer/SelectMinionContainer/ColorRect/MarginContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 10
+text = "Close"
+
+[node name="MinionStatsContainer" type="MarginContainer" parent="MarginContainer"]
+unique_name_in_owner = true
+visible = false
+custom_minimum_size = Vector2(256, 360)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="ColorRect" type="ColorRect" parent="MarginContainer/MinionStatsContainer"]
+layout_mode = 2
+color = Color(0.28188157, 0.54015654, 0.3523819, 1)
+
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer/MinionStatsContainer/ColorRect"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 8
+theme_override_constants/margin_top = 8
+theme_override_constants/margin_right = 8
+theme_override_constants/margin_bottom = 8
+
+[node name="MinionStats" type="VBoxContainer" parent="MarginContainer/MinionStatsContainer/ColorRect/MarginContainer"]
+layout_mode = 2
+theme_override_constants/separation = 8
+
+[node name="Header" type="Label" parent="MarginContainer/MinionStatsContainer/ColorRect/MarginContainer/MinionStats"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 0
+theme_type_variation = &"HeaderSmall"
+text = "Cobblestone Minion"
+label_settings = SubResource("LabelSettings_nsp0h")
+
+[node name="Level" type="Label" parent="MarginContainer/MinionStatsContainer/ColorRect/MarginContainer/MinionStats"]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+text = "Level: 1"
+
+[node name="Speed" type="Label" parent="MarginContainer/MinionStatsContainer/ColorRect/MarginContainer/MinionStats"]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+text = "Cooldown: 24s"
+
+[node name="AllTime" type="Label" parent="MarginContainer/MinionStatsContainer/ColorRect/MarginContainer/MinionStats"]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+text = "Max Capacity: 128"
+
+[node name="Label" type="Label" parent="MarginContainer/MinionStatsContainer/ColorRect/MarginContainer/MinionStats"]
+layout_mode = 2
+text = "All-Time Resources Generated:
+NONE LMAO!!!!!!!!!!!!!!!"
+
+[node name="ExtraInfo" type="Label" parent="MarginContainer/MinionStatsContainer/ColorRect/MarginContainer/MinionStats"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 10
+theme_type_variation = &"TooltipLabel"
+text = "Gives no XP when claimed!"
+
+[node name="CloseStats" type="Button" parent="MarginContainer/MinionStatsContainer/ColorRect/MarginContainer/MinionStats"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Close"

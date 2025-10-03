@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="NewGenerator" load_steps=2 format=3 uid="uid://dppgdghw04oyr"]
+
+[ext_resource type="Script" uid="uid://dshansb6og0nw" path="res://data_structures/data/MinionGenerator.gd" id="1_f12xn"]
+
+[resource]
+script = ExtResource("1_f12xn")
+name = "Oak Wood"
+level = 1
+cooldown = 24.0
+capacity = 128
+metadata/_custom_type_script = "uid://dshansb6og0nw"
