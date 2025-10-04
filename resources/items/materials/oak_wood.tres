@@ -1,12 +1,14 @@
-[gd_resource type="Resource" script_class="Item" load_steps=2 format=3 uid="uid://b7ybwurcbks34"]
+[gd_resource type="Resource" script_class="Materials" load_steps=2 format=3 uid="uid://b7ybwurcbks34"]
 
-[ext_resource type="Script" uid="uid://dxhec3op7c85c" path="res://data_structures/data/New_Item.gd" id="1_ufgck"]
+[ext_resource type="Script" uid="uid://bibwof2jxisp6" path="res://data_structures/data/material.gd" id="1_ufgck"]
 
 [resource]
 script = ExtResource("1_ufgck")
-Name = "Oak Wood"
 Type = "Wood"
 Obtain = "Foraging"
+Breaktime = 4.0
 BaseDrop = 1
-BaseXP = 3.0
+BaseXP = 1.0
+Name = "Oak Wood"
+Sellprice = 1.0
 metadata/_custom_type_script = "uid://dxhec3op7c85c"

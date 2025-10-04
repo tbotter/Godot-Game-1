@@ -9,7 +9,6 @@ func _ready() -> void:
 	(%CloseInfoContainer as Button).pressed.connect(_toggle_SelectMinionContainer)
 	(%CloseStats as Button).pressed.connect(_toggle_statscontainer)
 	(%InfoMinion as Button).pressed.connect(_toggle_statscontainer)
-	#((get_node("MarginContainer/MainMinionContainer/ID0") as Button).pressed.connect(_toggle_SelectMinionContainer))
 	for i in range(48):
 		(get_node("MarginContainer/MainMinionContainer/ID"+str(i)) as Button).pressed.connect(_toggle_SelectMinionContainer)
 	for j in range(5, 48):

@@ -51,6 +51,7 @@ layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
 focus_mode = 0
+button_mask = 3
 text = "Place Minion"
 
 [node name="ID1" type="Button" parent="MarginContainer/MainMinionContainer"]
