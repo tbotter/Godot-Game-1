@@ -16,9 +16,9 @@ func _unlock_hub() -> void :
 	if Game.ref.data.progression.hub_unlocked :
 		return
 	
-	if Game.ref.data.resources.inventory[0][1] >= OakCost && Game.ref.data.resources.inventory[1][1] >= CobbleCost :
-		Game.ref.data.resources.inventory[0][1] -= OakCost
-		Game.ref.data.resources.inventory[1][1] -= CobbleCost
+	if ResourceManager.ref.get_resource("Oak Wood") >= OakCost && ResourceManager.ref.get_resource("Cobblestone") >= CobbleCost :
+		ResourceManager.ref.consume_resource("Oak Wood", OakCost)
+		ResourceManager.ref.consume_resource("Cobblestone", CobbleCost)
 		
 		Game.ref.data.progression.hub_unlocked = true
 		_display_view(true)

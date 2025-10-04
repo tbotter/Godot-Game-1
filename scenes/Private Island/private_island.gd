@@ -19,8 +19,8 @@ func _ready() -> void:
 	Clock.ref.ticked.connect(update_label)
 
 func _unlock_cobble() -> void:
-	if Game.ref.data.resources.inventory[0][1] >= oak_COST:
-		Game.ref.data.resources.inventory[0][1] -= oak_COST
+	if ResourceManager.ref.get_resource("Oak Wood") >= oak_COST:
+		ResourceManager.ref.consume_resource("Oak Wood", oak_COST)
 		(%LockedCobblestoneButton as Button).visible = false
 		(%PICobblestoneButton as Button).visible = true
 		update_label()
@@ -28,10 +28,10 @@ func _unlock_cobble() -> void:
 	else : return
 
 func _oak_button_pressed() -> void:
-	ResourceManager.ref.create_resource(0, 100) ## 0 = Oakwood, 1 = Amount
+	ResourceManager.ref.create_resource("Oak Wood", 100) ## 0 = Oakwood, 1 = Amount
 	update_label()
 func _cobble_button_pressed() -> void:
-	ResourceManager.ref.create_resource(1, 100) ## 1 = Cobblestone, 1 = Amount
+	ResourceManager.ref.create_resource("Cobblestone", 100) ## 1 = Cobblestone, 1 = Amount
 	update_label()
 
 func _toggle_minion_area() -> void:
@@ -47,5 +47,5 @@ func _toggle_minion_area() -> void:
 		minions_visible = false
 
 func update_label() -> void:
-	(%OakLogsLabel as Label).text = "Oak Logs: %s" %ResourceManager.ref.get_resource(0)
-	(%CobblestoneLabel as Label).text = "Cobblestone: %s" %ResourceManager.ref.get_resource(1)
+	(%OakLogsLabel as Label).text = "Oak Logs: %s" %ResourceManager.ref.get_resource("Oak Wood")
+	(%CobblestoneLabel as Label).text = "Cobblestone: %s" %ResourceManager.ref.get_resource("Cobblestone")
