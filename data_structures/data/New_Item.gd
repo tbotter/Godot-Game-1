@@ -1,5 +1,6 @@
 class_name Item
 extends Resource
 
-@export var Name : String = "Name"
-@export var Sellprice : float = 0.0
+@export var name : String = "Name"
+@export var sellprice : float = 0.0
+@export var amount : int = 0
