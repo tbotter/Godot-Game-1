@@ -2,12 +2,21 @@
 
 [node name="Skydle Menu" type="Control"]
 layout_mode = 3
-anchor_right = 0.84400004
-anchor_bottom = 0.88900006
-offset_right = -0.32006836
+anchor_right = 0.712
+anchor_bottom = 0.739
+offset_right = 0.64001465
 offset_bottom = -0.08001709
 grow_horizontal = 2
 grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.6829946, 0.6246772, 0.5488428, 1)
 
 [node name="MarginContainer" type="MarginContainer" parent="."]
 layout_mode = 1
@@ -20,3 +29,197 @@ theme_override_constants/margin_left = 8
 theme_override_constants/margin_top = 8
 theme_override_constants/margin_right = 8
 theme_override_constants/margin_bottom = 8
+
+[node name="ColorRect" type="ColorRect" parent="MarginContainer"]
+layout_mode = 2
+color = Color(0.36660492, 0.33101672, 0.2846217, 1)
+
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 8
+theme_override_constants/margin_top = 8
+theme_override_constants/margin_right = 8
+theme_override_constants/margin_bottom = 8
+
+[node name="MenuLabel" type="Label" parent="MarginContainer/MarginContainer"]
+custom_minimum_size = Vector2(0, 92)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 0
+theme_type_variation = &"HeaderLarge"
+text = "Main Menu"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="MainMenu" type="VBoxContainer" parent="MarginContainer/MarginContainer"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_constants/separation = 10
+alignment = 1
+
+[node name="Seperator" type="Label" parent="MarginContainer/MarginContainer/MainMenu"]
+custom_minimum_size = Vector2(0, 92)
+layout_mode = 2
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="MarginContainer/MarginContainer/MainMenu"]
+layout_mode = 2
+alignment = 1
+
+[node name="PlayerStats" type="Button" parent="MarginContainer/MarginContainer/MainMenu/HBoxContainer2"]
+custom_minimum_size = Vector2(128, 92)
+layout_mode = 2
+text = "Player
+Stats"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/MarginContainer/MainMenu"]
+layout_mode = 2
+alignment = 1
+
+[node name="Skills" type="Button" parent="MarginContainer/MarginContainer/MainMenu/HBoxContainer"]
+custom_minimum_size = Vector2(92, 92)
+layout_mode = 2
+text = "Skills"
+
+[node name="Collection" type="Button" parent="MarginContainer/MarginContainer/MainMenu/HBoxContainer"]
+custom_minimum_size = Vector2(92, 92)
+layout_mode = 2
+text = "Collection"
+
+[node name="Recipes" type="Button" parent="MarginContainer/MarginContainer/MainMenu/HBoxContainer"]
+custom_minimum_size = Vector2(92, 92)
+layout_mode = 2
+text = "Recipes"
+
+[node name="Pets" type="Button" parent="MarginContainer/MarginContainer/MainMenu/HBoxContainer"]
+custom_minimum_size = Vector2(92, 92)
+layout_mode = 2
+text = "Pets
+(Coming
+Soon!)"
+
+[node name="Wardrobe" type="Button" parent="MarginContainer/MarginContainer/MainMenu/HBoxContainer"]
+custom_minimum_size = Vector2(92, 92)
+layout_mode = 2
+text = "Wardrobe
+Coming
+Whenever"
+
+[node name="Sacks" type="Button" parent="MarginContainer/MarginContainer/MainMenu/HBoxContainer"]
+custom_minimum_size = Vector2(92, 92)
+layout_mode = 2
+text = "Sacks
+Maybe
+idk"
+
+[node name="HBoxContainer3" type="HBoxContainer" parent="MarginContainer/MarginContainer/MainMenu"]
+layout_mode = 2
+alignment = 1
+
+[node name="Warps" type="Button" parent="MarginContainer/MarginContainer/MainMenu/HBoxContainer3"]
+custom_minimum_size = Vector2(92, 92)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+text = "Warps"
+
+[node name="Seperator2" type="Label" parent="MarginContainer/MarginContainer/MainMenu"]
+custom_minimum_size = Vector2(0, 92)
+layout_mode = 2
+
+[node name="Skills" type="HBoxContainer" parent="MarginContainer/MarginContainer"]
+visible = false
+layout_mode = 2
+size_flags_vertical = 4
+alignment = 1
+
+[node name="SkillCombat" type="Button" parent="MarginContainer/MarginContainer/Skills"]
+custom_minimum_size = Vector2(92, 92)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+text = "Combat"
+
+[node name="SkillMining" type="Button" parent="MarginContainer/MarginContainer/Skills"]
+custom_minimum_size = Vector2(92, 92)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+text = "Mining"
+
+[node name="SkillFarming" type="Button" parent="MarginContainer/MarginContainer/Skills"]
+custom_minimum_size = Vector2(92, 92)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+text = "Farming"
+
+[node name="SkillForaging" type="Button" parent="MarginContainer/MarginContainer/Skills"]
+custom_minimum_size = Vector2(92, 92)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+text = "Foraging"
+
+[node name="SkillFishing" type="Button" parent="MarginContainer/MarginContainer/Skills"]
+custom_minimum_size = Vector2(92, 92)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+text = "Fishing"
+
+[node name="Collection" type="HBoxContainer" parent="MarginContainer/MarginContainer"]
+visible = false
+layout_mode = 2
+size_flags_vertical = 4
+alignment = 1
+
+[node name="CollFarming" type="Button" parent="MarginContainer/MarginContainer/Collection"]
+custom_minimum_size = Vector2(92, 92)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+text = "Farming"
+
+[node name="CollMining" type="Button" parent="MarginContainer/MarginContainer/Collection"]
+custom_minimum_size = Vector2(92, 92)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+text = "Mining"
+
+[node name="CollCombat" type="Button" parent="MarginContainer/MarginContainer/Collection"]
+custom_minimum_size = Vector2(92, 92)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+text = "Combat"
+
+[node name="CollForaging" type="Button" parent="MarginContainer/MarginContainer/Collection"]
+custom_minimum_size = Vector2(92, 92)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+text = "Foraging"
+
+[node name="CollFishing" type="Button" parent="MarginContainer/MarginContainer/Collection"]
+custom_minimum_size = Vector2(92, 92)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+text = "Fishing"
+
+[node name="ReturnToPrevious" type="Button" parent="MarginContainer/MarginContainer"]
+custom_minimum_size = Vector2(92, 92)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 8
+text = "Back"
+
+[node name="ExitButton" type="Button" parent="MarginContainer/MarginContainer"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+size_flags_horizontal = 8
+size_flags_vertical = 0
+text = "Exit"
