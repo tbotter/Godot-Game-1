@@ -36,4 +36,4 @@ func _progress_cycle() -> void :
 
 func _generate() -> void :
 	_cycle_progression -= _cycle_duration
-	Game.ref.data.resources.inventory[1][1] += _production
+	ResourceManager.ref.create_resource("Cobblestone", _production)

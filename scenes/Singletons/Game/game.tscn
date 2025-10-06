@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://p7cb32mryuvn"]
+[gd_scene load_steps=14 format=3 uid="uid://p7cb32mryuvn"]
 
 [ext_resource type="Script" uid="uid://bes5c1fbcdqgn" path="res://scenes/Singletons/Game/game.gd" id="1_8mquj"]
 [ext_resource type="PackedScene" uid="uid://c0kekakdpkhwj" path="res://scenes/Singletons/Clock/clock.tscn" id="2_kul2v"]
@@ -7,6 +7,7 @@
 [ext_resource type="StyleBox" uid="uid://d4mcsp7wmdftq" path="res://assets/themes/style_box_flat/transparent.tres" id="4_ls3fi"]
 [ext_resource type="PackedScene" uid="uid://bniw04x68lpgn" path="res://scenes/Private Island/private_island.tscn" id="5_x3l1l"]
 [ext_resource type="PackedScene" uid="uid://cggqmmywhmp1r" path="res://scenes/Hub Island/hub_island.tscn" id="6_8hkvu"]
+[ext_resource type="PackedScene" uid="uid://cqca6mgh7ycny" path="res://scenes/Singletons/Menu/Menu.tscn" id="8_r5lwe"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_kul2v"]
 bg_color = Color(0.2783185, 0.65398836, 0.9999955, 1)
@@ -504,7 +505,18 @@ visible = false
 layout_mode = 2
 metadata/_tab_index = 1
 
+[node name="Skydle Menu" parent="." instance=ExtResource("8_r5lwe")]
+custom_minimum_size = Vector2(912, 532)
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_right = 0.0
+offset_bottom = 0.0
+
 [node name="Inventory" type="VBoxContainer" parent="."]
+visible = false
 offset_left = 5.0
 offset_top = 33.0
 offset_right = 273.0

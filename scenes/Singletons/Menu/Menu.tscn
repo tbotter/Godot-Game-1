@@ -1,47 +1,75 @@
-[gd_scene format=3 uid="uid://cqca6mgh7ycny"]
+[gd_scene load_steps=5 format=3 uid="uid://cqca6mgh7ycny"]
 
-[node name="Skydle Menu" type="Control"]
-layout_mode = 3
+[ext_resource type="Script" uid="uid://ut1r0xjbcaxf" path="res://scenes/Singletons/Menu/menu.gd" id="1_c3rqb"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_c3rqb"]
+bg_color = Color(0.3647059, 0.32941177, 0.28627452, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0.6643345, 0.61832976, 0.5623765, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_76m60"]
+bg_color = Color(0.4542268, 0.41314206, 0.36297217, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0.6627451, 0.61960787, 0.56078434, 1)
+corner_radius_top_left = 6
+corner_radius_top_right = 6
+corner_radius_bottom_right = 6
+corner_radius_bottom_left = 6
+shadow_color = Color(0.22815502, 0.20517603, 0.17453635, 1)
+shadow_size = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_pxqxr"]
+bg_color = Color(0.45490196, 0.4117647, 0.3647059, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0.6627451, 0.61960787, 0.56078434, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+shadow_color = Color(0.23529412, 0.21176471, 0.18039216, 1)
+shadow_size = 10
+
+[node name="Skydle Menu" type="MarginContainer"]
+anchors_preset = -1
 anchor_right = 0.712
 anchor_bottom = 0.739
 offset_right = 0.64001465
-offset_bottom = -0.08001709
+offset_bottom = 25.919983
 grow_horizontal = 2
 grow_vertical = 2
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 10
+script = ExtResource("1_c3rqb")
 
-[node name="ColorRect" type="ColorRect" parent="."]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-color = Color(0.6829946, 0.6246772, 0.5488428, 1)
-
-[node name="MarginContainer" type="MarginContainer" parent="."]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-theme_override_constants/margin_left = 8
-theme_override_constants/margin_top = 8
-theme_override_constants/margin_right = 8
-theme_override_constants/margin_bottom = 8
-
-[node name="ColorRect" type="ColorRect" parent="MarginContainer"]
+[node name="PanelContainer" type="PanelContainer" parent="."]
 layout_mode = 2
-color = Color(0.36660492, 0.33101672, 0.2846217, 1)
+size_flags_vertical = 4
+theme_override_styles/panel = SubResource("StyleBoxFlat_c3rqb")
 
-[node name="MarginContainer" type="MarginContainer" parent="MarginContainer"]
+[node name="MarginContainer" type="MarginContainer" parent="PanelContainer"]
 layout_mode = 2
 theme_override_constants/margin_left = 8
 theme_override_constants/margin_top = 8
 theme_override_constants/margin_right = 8
 theme_override_constants/margin_bottom = 8
 
-[node name="MenuLabel" type="Label" parent="MarginContainer/MarginContainer"]
+[node name="MenuLabel" type="Label" parent="PanelContainer/MarginContainer"]
+unique_name_in_owner = true
 custom_minimum_size = Vector2(0, 92)
 layout_mode = 2
 size_flags_horizontal = 4
@@ -51,7 +79,8 @@ text = "Main Menu"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="MainMenu" type="VBoxContainer" parent="MarginContainer/MarginContainer"]
+[node name="MainMenu" type="VBoxContainer" parent="PanelContainer/MarginContainer"]
+unique_name_in_owner = true
 custom_minimum_size = Vector2(64, 64)
 layout_mode = 2
 size_flags_horizontal = 4
@@ -59,165 +88,190 @@ size_flags_vertical = 4
 theme_override_constants/separation = 10
 alignment = 1
 
-[node name="Seperator" type="Label" parent="MarginContainer/MarginContainer/MainMenu"]
+[node name="Seperator" type="Label" parent="PanelContainer/MarginContainer/MainMenu"]
 custom_minimum_size = Vector2(0, 92)
 layout_mode = 2
 
-[node name="HBoxContainer2" type="HBoxContainer" parent="MarginContainer/MarginContainer/MainMenu"]
+[node name="HBoxContainer" type="HBoxContainer" parent="PanelContainer/MarginContainer/MainMenu"]
 layout_mode = 2
 alignment = 1
 
-[node name="PlayerStats" type="Button" parent="MarginContainer/MarginContainer/MainMenu/HBoxContainer2"]
+[node name="PlayerStats" type="Button" parent="PanelContainer/MarginContainer/MainMenu/HBoxContainer"]
+unique_name_in_owner = true
 custom_minimum_size = Vector2(128, 92)
 layout_mode = 2
 text = "Player
 Stats"
 
-[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/MarginContainer/MainMenu"]
+[node name="HBoxContainer2" type="HBoxContainer" parent="PanelContainer/MarginContainer/MainMenu"]
 layout_mode = 2
 alignment = 1
 
-[node name="Skills" type="Button" parent="MarginContainer/MarginContainer/MainMenu/HBoxContainer"]
+[node name="Skills" type="Button" parent="PanelContainer/MarginContainer/MainMenu/HBoxContainer2"]
+unique_name_in_owner = true
 custom_minimum_size = Vector2(92, 92)
 layout_mode = 2
 text = "Skills"
 
-[node name="Collection" type="Button" parent="MarginContainer/MarginContainer/MainMenu/HBoxContainer"]
+[node name="Collection" type="Button" parent="PanelContainer/MarginContainer/MainMenu/HBoxContainer2"]
+unique_name_in_owner = true
 custom_minimum_size = Vector2(92, 92)
 layout_mode = 2
 text = "Collection"
 
-[node name="Recipes" type="Button" parent="MarginContainer/MarginContainer/MainMenu/HBoxContainer"]
+[node name="Recipes" type="Button" parent="PanelContainer/MarginContainer/MainMenu/HBoxContainer2"]
+unique_name_in_owner = true
 custom_minimum_size = Vector2(92, 92)
 layout_mode = 2
 text = "Recipes"
 
-[node name="Pets" type="Button" parent="MarginContainer/MarginContainer/MainMenu/HBoxContainer"]
+[node name="Pets" type="Button" parent="PanelContainer/MarginContainer/MainMenu/HBoxContainer2"]
+unique_name_in_owner = true
 custom_minimum_size = Vector2(92, 92)
 layout_mode = 2
 text = "Pets
 (Coming
 Soon!)"
 
-[node name="Wardrobe" type="Button" parent="MarginContainer/MarginContainer/MainMenu/HBoxContainer"]
+[node name="Wardrobe" type="Button" parent="PanelContainer/MarginContainer/MainMenu/HBoxContainer2"]
+unique_name_in_owner = true
 custom_minimum_size = Vector2(92, 92)
 layout_mode = 2
 text = "Wardrobe
 Coming
 Whenever"
 
-[node name="Sacks" type="Button" parent="MarginContainer/MarginContainer/MainMenu/HBoxContainer"]
+[node name="Sacks" type="Button" parent="PanelContainer/MarginContainer/MainMenu/HBoxContainer2"]
+unique_name_in_owner = true
 custom_minimum_size = Vector2(92, 92)
 layout_mode = 2
 text = "Sacks
 Maybe
 idk"
 
-[node name="HBoxContainer3" type="HBoxContainer" parent="MarginContainer/MarginContainer/MainMenu"]
+[node name="HBoxContainer3" type="HBoxContainer" parent="PanelContainer/MarginContainer/MainMenu"]
 layout_mode = 2
 alignment = 1
 
-[node name="Warps" type="Button" parent="MarginContainer/MarginContainer/MainMenu/HBoxContainer3"]
+[node name="Warps" type="Button" parent="PanelContainer/MarginContainer/MainMenu/HBoxContainer3"]
 custom_minimum_size = Vector2(92, 92)
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
 text = "Warps"
 
-[node name="Seperator2" type="Label" parent="MarginContainer/MarginContainer/MainMenu"]
+[node name="Seperator2" type="Label" parent="PanelContainer/MarginContainer/MainMenu"]
 custom_minimum_size = Vector2(0, 92)
 layout_mode = 2
 
-[node name="Skills" type="HBoxContainer" parent="MarginContainer/MarginContainer"]
+[node name="SkillsPanel" type="PanelContainer" parent="PanelContainer/MarginContainer"]
+unique_name_in_owner = true
 visible = false
+custom_minimum_size = Vector2(800, 300)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_styles/panel = SubResource("StyleBoxFlat_76m60")
+
+[node name="SkillsMenu" type="HBoxContainer" parent="PanelContainer/MarginContainer/SkillsPanel"]
 layout_mode = 2
 size_flags_vertical = 4
 alignment = 1
 
-[node name="SkillCombat" type="Button" parent="MarginContainer/MarginContainer/Skills"]
+[node name="SkillCombat" type="Button" parent="PanelContainer/MarginContainer/SkillsPanel/SkillsMenu"]
 custom_minimum_size = Vector2(92, 92)
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
 text = "Combat"
 
-[node name="SkillMining" type="Button" parent="MarginContainer/MarginContainer/Skills"]
+[node name="SkillMining" type="Button" parent="PanelContainer/MarginContainer/SkillsPanel/SkillsMenu"]
 custom_minimum_size = Vector2(92, 92)
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
 text = "Mining"
 
-[node name="SkillFarming" type="Button" parent="MarginContainer/MarginContainer/Skills"]
+[node name="SkillFarming" type="Button" parent="PanelContainer/MarginContainer/SkillsPanel/SkillsMenu"]
 custom_minimum_size = Vector2(92, 92)
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
 text = "Farming"
 
-[node name="SkillForaging" type="Button" parent="MarginContainer/MarginContainer/Skills"]
+[node name="SkillForaging" type="Button" parent="PanelContainer/MarginContainer/SkillsPanel/SkillsMenu"]
 custom_minimum_size = Vector2(92, 92)
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
 text = "Foraging"
 
-[node name="SkillFishing" type="Button" parent="MarginContainer/MarginContainer/Skills"]
+[node name="SkillFishing" type="Button" parent="PanelContainer/MarginContainer/SkillsPanel/SkillsMenu"]
 custom_minimum_size = Vector2(92, 92)
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
 text = "Fishing"
 
-[node name="Collection" type="HBoxContainer" parent="MarginContainer/MarginContainer"]
+[node name="CollectionPanel" type="PanelContainer" parent="PanelContainer/MarginContainer"]
+unique_name_in_owner = true
 visible = false
+custom_minimum_size = Vector2(800, 300)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_styles/panel = SubResource("StyleBoxFlat_pxqxr")
+
+[node name="CollectionMenu" type="HBoxContainer" parent="PanelContainer/MarginContainer/CollectionPanel"]
 layout_mode = 2
 size_flags_vertical = 4
 alignment = 1
 
-[node name="CollFarming" type="Button" parent="MarginContainer/MarginContainer/Collection"]
+[node name="CollFarming" type="Button" parent="PanelContainer/MarginContainer/CollectionPanel/CollectionMenu"]
 custom_minimum_size = Vector2(92, 92)
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
 text = "Farming"
 
-[node name="CollMining" type="Button" parent="MarginContainer/MarginContainer/Collection"]
+[node name="CollMining" type="Button" parent="PanelContainer/MarginContainer/CollectionPanel/CollectionMenu"]
 custom_minimum_size = Vector2(92, 92)
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
 text = "Mining"
 
-[node name="CollCombat" type="Button" parent="MarginContainer/MarginContainer/Collection"]
+[node name="CollCombat" type="Button" parent="PanelContainer/MarginContainer/CollectionPanel/CollectionMenu"]
 custom_minimum_size = Vector2(92, 92)
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
 text = "Combat"
 
-[node name="CollForaging" type="Button" parent="MarginContainer/MarginContainer/Collection"]
+[node name="CollForaging" type="Button" parent="PanelContainer/MarginContainer/CollectionPanel/CollectionMenu"]
 custom_minimum_size = Vector2(92, 92)
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
 text = "Foraging"
 
-[node name="CollFishing" type="Button" parent="MarginContainer/MarginContainer/Collection"]
+[node name="CollFishing" type="Button" parent="PanelContainer/MarginContainer/CollectionPanel/CollectionMenu"]
 custom_minimum_size = Vector2(92, 92)
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
 text = "Fishing"
 
-[node name="ReturnToPrevious" type="Button" parent="MarginContainer/MarginContainer"]
+[node name="ReturnToMenu" type="Button" parent="PanelContainer/MarginContainer"]
+unique_name_in_owner = true
 custom_minimum_size = Vector2(92, 92)
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 8
 text = "Back"
 
-[node name="ExitButton" type="Button" parent="MarginContainer/MarginContainer"]
+[node name="ExitButton" type="Button" parent="PanelContainer/MarginContainer"]
+unique_name_in_owner = true
 custom_minimum_size = Vector2(64, 64)
 layout_mode = 2
 size_flags_horizontal = 8
