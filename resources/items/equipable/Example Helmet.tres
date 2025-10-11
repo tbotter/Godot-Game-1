@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Equipable" load_steps=2 format=3 uid="uid://njqt7sb3135h"]
+
+[ext_resource type="Script" uid="uid://dn0215sb34snb" path="res://data_structures/data/player/equipable.gd" id="1_54avq"]
+
+[resource]
+script = ExtResource("1_54avq")
+Health = null
+Defense = null
+Intelligence = null
+ForagingFortune = 100
+MiningFortune = null
+FarmingFortune = null
+Recipe = null
+name = "Wood Helmet"
+sellprice = 1.0
+amount = null
+metadata/_custom_type_script = "uid://dn0215sb34snb"

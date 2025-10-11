@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="Materials" load_steps=2 format=3 uid="uid://tkravgesypvg"]
 
-[ext_resource type="Script" uid="uid://bibwof2jxisp6" path="res://data_structures/data/material.gd" id="1_jr1fx"]
+[ext_resource type="Script" uid="uid://bibwof2jxisp6" path="res://data_structures/data/Items/material.gd" id="1_jr1fx"]
 
 [resource]
 script = ExtResource("1_jr1fx")
